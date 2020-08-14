@@ -1,5 +1,6 @@
 package com.demo.example;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -15,6 +16,8 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+    	SBAccount savings = new SBAccount(1000);
+    	savings.Withdraw(250);
+        assertEquals(savings.getBalance(),750);
     }
 }
