@@ -17,7 +17,7 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
     	SBAccount savings = new SBAccount(1000);
-    	savings.Withdraw(250);
+    	savings.withdraw(250);
         assertEquals(savings.getBalance(),750);
     }
 }

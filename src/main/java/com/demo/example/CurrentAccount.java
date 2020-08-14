@@ -10,15 +10,15 @@ public class CurrentAccount extends Account{
         this.amount = amount;
     }
     
-    public void Deposit(int amount){
+    public void deposit(int amount){
         this.amount += amount;
     }
     
-    public void Withdraw(int amount){
+    public void withdraw(int amount){
         this.amount -= amount;
     }
     
-    public void DisplayBalance(){
+    public void displayBalance(){
         System.out.println("Your amount in account is "+amount);
     }
 }
